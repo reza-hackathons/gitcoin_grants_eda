@@ -1,42 +1,75 @@
-<style>
-    body {
-        margin-top: 24px;
-        margin-bottom: 24px;
-        margin-left: 15%;
-        margin-right: 15%;
-        background: lightgray;
-    };    
-</style>
-<h1>Gitcoin grants rounds 1 to 12 analysis report</h1>
+<html>
+<head>    
+    <style>
+        body {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            margin-left: 15%;
+            margin-right: 15%;
+            background: lightgray;
+            font-size: 1.2em;
+        };    
+    </style>
+</head>
+<body>
+    <h1 align="center">Gitcoin grants analysis report</h1>
 
-<h2>Overview</h2>
-<p>
-    total funds raised: $16,130,338.6<br/>
-    total crowdfunds: $9,357,245.1<br/>
-    total matched amounts: $6,773,093.4<br/>
-</p>
+    <h2>Overview</h2>
+    <p>
+        This report aims to show some trends within Gitcoin grants' rounds 1-12.
+    </p>
+    <p>
+        Let's begin with some global stats: <br/>
+        <ul>
+            <li>Total amount of funds raised: <u>$16,130,338.6</u></li>
+            <li>Total amount of crowdfunds raised : <u>$9,357,245.1</u></li>
+            <li>Total pool of match amounts: <u>$6,773,093.4</u></li>
+            <li>Total grants: <u>2,134</u></li>
+            <li>Total number of contributions: <u>1,350,623 </u></li>
+            <li>Average amount of contribution per grant: <u>$11.9</u></li>
+        </ul>
+    </p>
+    <h3>Grants, new and old</h3>
+    <p>As can bee seen in the following figure, the next round's % of new to total grants should hover around 20-30%. Rounds 9 trough 11 could be regarded as some sort of new grants' winter where the % of new grants has fallen sharply by almost 50%.
+    </p>
+    <img src="./images/grants.png" />
 
-<h3>Overall grants, new and old</h3>
-<img src="./images/grants.png" />
+    <h3>Overall funds' distribution per rounds</h3>
+    <p>
+        Round 8 saw the biggest increase in crowdfunds, almost ~7x! then things started to slow down across the next three rounds. It was round 12 where grants enjoyed a good 2x increase in crowdfunds compared the the previous round.<br/> Round 12 is specially interesting in that every $1 of crowdfunds is matched with $1 in the matching pool on average.
+    </p>
+    <img src='./images/funds.png' />
 
-<h3>Overall funds' distribution per rounds</h3>
-<img src='./images/funds.png' />
+    <h3>Contributions trend</h3>
+    <p>
+        Round 8 seems to be the bull market of gitcoin grants where total contributions spiked by ~4-5x followd by more than ~50% increase every next round! Expecting a 30% increase in total contributions in the next round(13) should not be ruled out.<br/>
+        Another subtle point to pay attention to is how on average every unique contribution seems to result in ~ $15 of raised funds, at least what appears to be the case in the last 4 rounds. <i>Please note that this measure is a bit controversial and needs furthur research to clarify things.</i>
+    </p>
+    <img src="./images/cont.png" />
 
-<h3>Overall contributions trend</h3>
-<img src="./images/cont.png" />
+    <h3>Grants' demographics</h3>
+    <p><b>undefined</b> refers to those grants whose founders have decided to not disclose their location.
+    </p>
+    <img src="./images/regions.png" />
 
-<h3>Overall grants distribution by region</h3>
-<img src="./images/regions.png" />
+    <h3>Tracking grants by their category</h3>
+    <p><b>Community</b> and <b>dApp Tech</b> are close rivals here! Cautios here as some grants could be housed within both categories.
+    </p>
+    <img src="./images/categories.png" />
 
-<h3>overall grants distribution by category</h3>
-<img src="./images/categories.png" />
+    <h3>Region-wise grants per each round</h3>
+    <p>As Gitcoin ages, it seems that more people are introduced to it. Here we can see that all regions are showing organic growth.        
+    </p>
+    <img src="./images/region-wise.png" />
 
-<h3>Region-wise grants per round</h3>
-<img src="./images/region-wise.png" />
+    <h3>Category-wise grants per round</h3>
+    <p>This is an interesting chart! People have given up building Gitcoin, either tracks have been updated(=> dGov) or there are not much to build on Gitcoin anymore?! DAOs seem to be gaining momentum starting with round 9 and NFTs show rise and fall similar to the market cap fluctuations. Oh, why Crypto for Black Lives died btw? </p>
+    <img src="./images/category-wise.png" />
 
-<h3>Category-wise grants per round</h3>
-<img src="./images/category-wise.png" />
-
-<h3>Starved grants</h3>
-<p>Assuming it takes $5 worth of energy to create a grant on Gitcoin, the following figure demonstrates what % of grants failed raise a minimum of $5</p>
-<img src="./images/starved.png" />
+    <h3>Starved grants</h3>
+    <p>Assuming it takes $5 worth of energy to create a grant on Gitcoin, the following figure demonstrates what % of grants failed raise a minimum of $5 :)<br/>
+    Rounds 2 and 3 had the most lucky grants, almost all received some pie from the cake while round 12 saw the biggest massacre in raised funds. Round 8 is interesting in that both the total raised funds is high(~2.5m) and also less than 5% of the grants were deprived of $.</p>
+    <img src="./images/starved.png" />
+    <h3>More is yet to come...</h3>
+</body>
+</html>
