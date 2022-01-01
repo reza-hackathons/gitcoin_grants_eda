@@ -4,11 +4,14 @@
         body {
             margin-top: 24px;
             margin-bottom: 24px;
-            margin-left: 15%;
-            margin-right: 15%;
+            margin-left: 5%;
+            margin-right: 5%;
             background: lightgray;
             font-size: 1.2em;
-        };    
+            background-color: #333;
+            color: #ccc;            
+            font-family: arial;
+        }; 
     </style>
 </head>
 <body>
@@ -16,18 +19,24 @@
 
     <h2>Overview</h2>
     <p>
-        This report aims to show some trends within Gitcoin grants' rounds 1-12.
+        This report aims to show some trends within Gitcoin grants rounds 1 through 12.
     </p>
     <p>
-        Let's begin with some global stats: <br/>
-        <ul>
-            <li>Total amount of funds raised: <u>$16,130,338.6</u></li>
-            <li>Total amount of crowdfunds raised : <u>$9,357,245.1</u></li>
-            <li>Total pool of match amounts: <u>$6,773,093.4</u></li>
-            <li>Total grants: <u>2,134</u></li>
-            <li>Total number of contributions: <u>1,350,623 </u></li>
-            <li>Average amount of contribution per grant: <u>$11.9</u></li>
-        </ul>
+        Let's begin with some global stats<br/>
+        <div style='display: grid; grid-template-columns: auto auto; grid-gap: .25em;'>           
+            <span>Total amount of funds raised</span>
+            <span>$16,130,338.6</span>
+            <span>Total amount of crowdfunds raised</span>
+            <span>$9,357,245.1</span>
+            <span>Total pool of match amounts</span>
+            <span>$6,773,093.4</span>
+            <span>Total number of grants</span>
+            <span>2,134</span>
+            <span>Total number of contributions</span>
+            <span>1,350,623 </span>
+            <span>Average amount of contribution per grant</span>
+            <span>$11.9</span>
+        </div>
     </p>
     <h3>Grants, new and old</h3>
     <p>As can bee seen in the following figure, the next round's % of new to total grants should hover around 20-30%. Rounds 9 trough 11 could be regarded as some sort of new grants' winter where the % of new grants has fallen sharply by almost 50%.
@@ -70,6 +79,41 @@
     <p>Assuming it takes $5 worth of energy to create a grant on Gitcoin, the following figure demonstrates what % of grants failed raise a minimum of $5 :)<br/>
     Rounds 2 and 3 had the most lucky grants, almost all received some pie from the cake while round 12 saw the biggest massacre in raised funds. Round 8 is interesting in that both the total raised funds is high(~2.5m) and also less than 5% of the grants were deprived of $.</p>
     <img src="./images/starved.png" />
-    <h3>More is yet to come...</h3>
+    <h3>Region-Category dynamics and the amounts grants attracted in GR12</h3>
+    <p>The following charts try to show how grants raise money in a region-category wise manner. Given the enormisity of the details about each round, I decided to focus on GR12 and band crowdfund earnings into smaller $ bands. You can also ignore my interpretation of charts and view the trends yourself since graphs are sorted in decreasing $ amounts. I'm a fan of infinite vertical displays :)
+    </p>
+    <p>Overally it seems that most of the crowdfunds have been captured by the following categories: Undefined, North America, and Europe. Oceanian are more successful at attracting between $2,500 and $2,5000 while than lower amounts. Funders are also more inclined towards the range of $10,000 to $25,000 than they are to $7,500 to $10,000. Dapps appear to be the widest earning track attracting funders from $1 to $160,000.    
+    </p>
+
+    <h4>$10,000 to $175,000</h4>
+    <p>Infra Tech still strong among funders with the widest geaographical reach in this range and the $100,000 being the highest any grant received. $10,000 apears to be the ceiling for Middle eastern grants. Eastern asian NFT grants show some strength here. $75,000 for Latin american NFT grants, wow! Indians still busy with their Dapps.
+    </p>
+    <img src="./images/gr12-10k-175k.png" />
+
+    <h4>$2,500 to $10,000</h4>
+    <p>Infra Tech continues to hold the line of its market share. This range is where southern hemisphere tracks start to surronder to northern tracks, with undefined track excluded of course. Sorry, no African grants here :(. European grants closing on in north american ones. The interest in undefined grants subsides when it comes to $5,000 to $10,000 range.
+    </p>
+    <img src="./images/gr12-2500-10k.png" />
+
+    <h4>$250 to $2,500</h4>
+    <p>Infra Tech seems to start to show off here closing on in other tracks. dGov track seems to finally shows some interest in this range too with $1,500 to $2,000 being the sweet spot. Middle easterner are more active here too with 7 grants receiving ~ $5,000 in funding. Oceanian grants failed to earn any $ here. North american grants dominate this price range again! 
+    </p>
+    <img src="./images/gr12-250-2500.png" />
+
+    <h4>$50 to $250</h4>
+    <p>dGov grants must have had a hard time attracting funds between $100 and $250. Indian grants besides Dapps were failed to receive any funds in this range. Infra Tech grants show a powerful presence in the $75 to $100 range.
+    </p>
+    <img src="./images/gr12-50-250.png" />
+    
+    <h4>$0 to $50</h4>    
+    <p>Well, Latin Americans are very interested in Dapps and Community grants. Almost more than 95% of the funds raised are destined to these tracks with NFTs and dGovs sharing the rest.<br/>
+    African grants seem to be similiar to Latin Americans. But chances of raising $ working on NFT grants are 100% for Africans. While Community and Dapps are popular here, the avg amount raised by these tracks is behind the NFT track by a big margin.<br/>
+    NFTs grants are very likely to disclose their region, not sure why but seems founders are less concerned about this compared to other tracks. While the opposite holds for Infra Tech grants where founders are reluctant to disclose their locations.<br/>
+    Overally speaking Dapps and Community grants are more likely to starve while dGov grants tend to earn something at least.<br/>
+    This range is also the most interesting one as it has the highest impact on QF matching pools!
+    </p>
+    <img src="./images/gr12-1-50.png">
+
+    <h3>To be continued...</h3>
 </body>
 </html>
